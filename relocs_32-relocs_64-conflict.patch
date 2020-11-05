@@ -1,0 +1,12 @@
+diff a/arch/x86/tools/relocs.c b/arch/x86/tools/relocs.c
+--- a/arch/x86/tools/relocs.c
++++ b/arch/x86/tools/relocs.c
+@@ -695,7 +695,7 @@
+  *
+  */
+ static int per_cpu_shndx	= -1;
+-Elf_Addr per_cpu_load_addr;
++static Elf_Addr per_cpu_load_addr;
+
+ static void percpu_init(void)
+ {
